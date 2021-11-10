@@ -28,9 +28,8 @@ Click the Log of this Image to see the Inital Admin Password</Overview>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
+  <Support>https://forums.unraid.net/topic/115790-support-lordfishs-images/</Support>
   <DateInstalled>1636556003</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
   <Requires>Factorio</Requires>
   <Screenshot>https://raw.githubusercontent.com/OpenFactorioServerManager/factorio-server-manager/master/screenshots/Screenshot_Mods.png</Screenshot>
   <Config Name="OFSM Port" Target="80" Default="" Mode="tcp" Description="(check if Port is already used by other Contrainer)" Type="Port" Display="always" Required="false" Mask="false">8888</Config>
