@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Maintainer>
+  <Icon>https://raw.githubusercontent.com/lordfiSh/unraid-docker-images/main/images/fish.png</Icon>
+  <Profile>
+    Unraid Docker images
+  </Profile>
+  <DonateLink>https://www.paypal.com/paypalme/imgeld</DonateLink>
+  <DonateText>If you appreciate my work, then please consider buying me a beer :D</DonateText>
+</Maintainer>
