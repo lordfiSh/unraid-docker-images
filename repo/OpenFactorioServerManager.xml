@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>OpenFactorioServerManager</Name>
+  <Name>FactorioServerManager</Name>
   <Repository>ofsm/ofsm</Repository>
   <Registry>https://hub.docker.com/r/ofsm/ofsm</Registry>
   <Network>bridge</Network>
@@ -12,30 +12,29 @@
   <Overview> A tool for managing Factorio servers &#xD;
 This tool runs on a Factorio server and allows management of the Factorio server, saves, mods and many other features.&#xD;
 &#xD;
- Features
-- Allows control of the Factorio Server, starting and stopping the Factorio binary
-- Allows the management of save files, upload, download and delete saves.
-- Manage installed mods, upload new ones and more
-- Manage modpacks, so it is easier to play with different configurations
-- Allow viewing of the server logs and current configuration.
-- Authentication for protecting against unauthorized users
+ Features&#xD;
+- Allows control of the Factorio Server, starting and stopping the Factorio binary&#xD;
+- Allows the management of save files, upload, download and delete saves.&#xD;
+- Manage installed mods, upload new ones and more&#xD;
+- Manage modpacks, so it is easier to play with different configurations&#xD;
+- Allow viewing of the server logs and current configuration.&#xD;
+- Authentication for protecting against unauthorized users&#xD;
 &#xD;
-Click the Log of this Image to see the Inital Admin Password</Overview>
-  <Category>GameServers: Tools: Status:Beta</Category>
+Check the Log of the Container to see the Inital Admin Password</Overview>
+  <Category>GameServers: Status:Beta</Category>
   <WebUI>http://[IP]:[PORT:80]</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/lordfiSh/unraid-docker-images/main/repo/OpenFactorioServerManager.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/lordfiSh/unraid-docker-images/main/images/factorio-server-manager.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <Support>https://forums.unraid.net/topic/115790-support-lordfishs-images/</Support>
-  <DateInstalled>1636556003</DateInstalled>
-  <Requires>Factorio</Requires>
-  <Screenshot>https://raw.githubusercontent.com/OpenFactorioServerManager/factorio-server-manager/master/screenshots/Screenshot_Mods.png</Screenshot>
-  <Config Name="OFSM Port" Target="80" Default="" Mode="tcp" Description="(check if Port is already used by other Contrainer)" Type="Port" Display="always" Required="false" Mask="false">8888</Config>
-  <Config Name="Factorio Path" Target="/home/user/.factorio" Default="/mnt/user/appdata/factorio/" Mode="rw" Description="(if you used the Factorio Contrainer, this should be right)" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/factorio/</Config>
-  <Config Name="OFSM Data" Target="/opt/fsm-data" Default="" Mode="rw" Description="(can be left as it is)" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/OpenFactorioServerManager</Config>
+  <DateInstalled>1636565704</DateInstalled>
+  <Requires/>
+  <Config Name="FSM Port" Target="80" Default="" Mode="tcp" Description="(check if Port is already used by other Contrainer)" Type="Port" Display="always" Required="false" Mask="false">8888</Config>
+  <Config Name="Factorio Path" Target="/opt/factorio" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/fsm_factorio/</Config>
+  <Config Name="FSM Data" Target="/opt/fsm-data" Default="" Mode="rw" Description="(can be left as it is)" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/fsm_data</Config>
+  <Config Name="Factorio Port" Target="34197" Default="" Mode="udp" Description="" Type="Port" Display="always" Required="false" Mask="false">34197</Config>
   <Config Name="Unraid_PGID" Target="PGID" Default="" Mode="" Description="(can be left as it is)" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
-  <Config Name="Unraid_PUID" Target="PUID" Default="" Mode="" Description="(can be left as it is)" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
   <Config Name="Unraid_UMASK" Target="UMASK" Default="" Mode="" Description="(can be left as it is)" Type="Variable" Display="always" Required="false" Mask="false">000</Config>
+  <Config Name="Unraid_PUID" Target="PUID" Default="" Mode="" Description="(can be left as it is)" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
 </Container>
