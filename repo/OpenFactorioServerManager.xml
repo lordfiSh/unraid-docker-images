@@ -31,10 +31,8 @@ Check the Log of the Container to see the Inital Admin Password</Overview>
   <DateInstalled>1636565704</DateInstalled>
   <Requires/>
   <Config Name="FSM Port" Target="80" Default="" Mode="tcp" Description="(check if Port is already used by other Contrainer)" Type="Port" Display="always" Required="false" Mask="false">8888</Config>
-  <Config Name="Factorio Path" Target="/opt/factorio" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/fsm_factorio/</Config>
-  <Config Name="FSM Data" Target="/opt/fsm-data" Default="" Mode="rw" Description="(can be left as it is)" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/fsm_data</Config>
+  <Config Name="FSM Saves" Target="/opt/factorio/saves" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/fsm_saves/</Config>
+  <Config Name="FSM Mods" Target="/opt/factorio/mods" Default="" Mode="rw" Description="(can be left as it is)" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/fsm_mods</Config>
+  <Config Name="FSM Config" Target="/opt/factorio/config" Default="" Mode="rw" Description="(can be left as it is)" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/fsm_config</Config>
   <Config Name="Factorio Port" Target="34197" Default="" Mode="udp" Description="" Type="Port" Display="always" Required="false" Mask="false">34197</Config>
-  <Config Name="Unraid_PGID" Target="PGID" Default="" Mode="" Description="(can be left as it is)" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
-  <Config Name="Unraid_UMASK" Target="UMASK" Default="" Mode="" Description="(can be left as it is)" Type="Variable" Display="always" Required="false" Mask="false">000</Config>
-  <Config Name="Unraid_PUID" Target="PUID" Default="" Mode="" Description="(can be left as it is)" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
 </Container>
