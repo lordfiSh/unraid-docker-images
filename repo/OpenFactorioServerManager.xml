@@ -37,5 +37,5 @@ Check the Log of the Container to see the Inital Admin Password</Overview>
   <Config Name="FSM Mods" Target="/opt/factorio/mods" Default="" Mode="rw" Description="(can be left as it is)" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/fsm_mods</Config>
   <Config Name="FSM Config" Target="/opt/factorio/config" Default="" Mode="rw" Description="(can be left as it is)" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/fsm_config</Config>
   <Config Name="Factorio Port" Target="34197" Default="" Mode="udp" Description="" Type="Port" Display="always" Required="false" Mask="false">34197</Config>
-  <Config Name="Factorio Version" Target="FACTORIO_VERSION " Default="stable" Mode="" Description="This can be *stable* or Version Number like *1.1.53*" Type="Variable" Display="always" Required="false" Mask="false">stable</Config>
+  <Config Name="Factorio Version" Target="FACTORIO_VERSION" Default="stable" Mode="" Description="This can be *stable* or Version Number like *1.1.53*" Type="Variable" Display="always" Required="false" Mask="false">stable</Config>
 </Container>
